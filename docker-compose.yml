@@ -1,0 +1,43 @@
+version: "3.8"
+
+services:
+  ollama:
+    build:
+      context: .
+      dockerfile: Dockerfile.ollama
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      - OLLAMA_MODEL=${OLLAMA_MODEL}
+      - OLLAMA_HOST=${OLLAMA_HOST}
+      - NVIDIA_VISIBLE_DEVICES=all
+    runtime: nvidia
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  app:
+    build: .
+    container_name: support-bot
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app
+      - ./documents:/app/documents
+    environment:
+      - OLLAMA_MODEL=${OLLAMA_MODEL}
+      - OLLAMA_HOST=${OLLAMA_HOST}
+    depends_on:
+      ollama:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  ollama_data:
