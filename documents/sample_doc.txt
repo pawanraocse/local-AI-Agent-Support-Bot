@@ -1,0 +1,32 @@
+Employee Record: Sarah Thompson
+
+Full Name: Sarah Marie Thompson  
+Employee ID: ACME-02391  
+Designation: Senior Product Manager  
+Department: Product and Strategy  
+Date of Joining: April 15, 2019  
+Current Location: San Francisco, CA  
+Email: sarah.thompson@acmeinc.com  
+Phone: +1-415-555-0192  
+Manager: Kevin Holt  
+Performance Rating (2024): Exceeds Expectations  
+Skills: Product Strategy, Roadmapping, Market Research, Agile Methodology  
+Certifications: Certified Scrum Product Owner (CSPO), Pragmatic Marketing Certified  
+
+Project History:
+- 2020-2021: Led Project Orion – a data-driven product analytics dashboard.
+- 2022: Coordinated launch of Acme CRM v2.0, increasing client retention by 18%.
+- 2023-Present: Driving cross-functional roadmap for AI-integrated sales assistant.
+
+Leave Balance (as of May 2025):
+- Casual Leave: 5 days
+- Sick Leave: 2 days
+- Earned Leave: 11 days
+
+Emergency Contact:
+- Name: Michael Thompson
+- Relationship: Spouse
+- Phone: +1-415-555-0177
+
+Notes:
+Sarah is a high performer with strong leadership skills. She has expressed interest in relocating to the New York office in Q4 2025 for family reasons.
